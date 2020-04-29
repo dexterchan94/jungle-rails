@@ -1,2 +1,8 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<h1>Dashboard</h1>
+<p>Total number of <%= link_to 'products', admin_products_path %>: <%= @product_count %></p>
+<p>Total number of categories: <%= @categories.length %></p>
+<ul>
+  <% @categories.each do |category| %>
+    <li><%= link_to category.name, category %></li>
+  <% end %>
+</ul>
