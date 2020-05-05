@@ -52,6 +52,18 @@ RSpec.describe User, type: :model do
       expect(@user).to be_nil
     end
 
+    it 'returns a user with trailing whitespace in the email field' do
+      User.create(name: "John Smith", email: "johnsmith@gmail.com", password: "password", password_confirmation: "password")
+      @user = User.authenticate_with_credentials(" johnsmith@gmail.com ", "password")
+      expect(@user).to be_an_instance_of(User)
+    end
+
+    it 'returns a user with any combination of upper/lowercase characters for a valid email' do
+      User.create(name: "John Smith", email: "Johnsmith@gmail.com", password: "password", password_confirmation: "password")
+      @user = User.authenticate_with_credentials("jOhNsMiTh@gMaIl.CoM ", "password")
+      expect(@user).to be_an_instance_of(User)
+    end
+
   end
 
 end
