@@ -9,16 +9,16 @@ Unit testing and feature testing was implemented in this project using RSpec, Ca
 ## Screenshots
 
 ### Products Index
-
+!["Products Index"](https://github.com/dexterchan94/jungle-rails/blob/master/docs/products-index.png?raw=true)
 
 ### Cart
-
+!["Cart"](https://github.com/dexterchan94/jungle-rails/blob/master/docs/cart.png?raw=true)
 
 ### Payment
-
+!["Payment"](https://github.com/dexterchan94/jungle-rails/blob/master/docs/payment.png?raw=true)
 
 ### Order Confirmation
-
+!["Order Confirmation"](https://github.com/dexterchan94/jungle-rails/blob/master/docs/order-confirmation.png?raw=true)
 
 ## Setup
 
