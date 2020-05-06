@@ -2,6 +2,23 @@
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 
+In this application, a user can browse products, add them to a cart, and checkout with Stripe. Admin users can also add product listings and create new product categories.
+
+Unit testing and feature testing was implemented in this project using RSpec, Capybara, Poltergeist, and Database Cleaner.
+
+## Screenshots
+
+### Products Index
+
+
+### Cart
+
+
+### Payment
+
+
+### Order Confirmation
+
 
 ## Setup
 
@@ -25,3 +42,10 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 * PostgreSQL 9.x
 * Stripe
+
+## Dev Dependencies
+
+* RSpec
+* Capybara
+* Poltergeist
+* Database Cleaner
